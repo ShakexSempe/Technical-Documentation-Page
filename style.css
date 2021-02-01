@@ -126,23 +126,30 @@ header{
     padding: 15px;
   }
   
-  footer{
+.footer{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 20px;
+
 }
-footer a{
+footer a, footer p{
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
+  margin: 0 10px;
 }
 footer span{
   color: crimson;
 }
 
 
+
   #git_hub{
     color: #eee;
   }
+
   
   
   
