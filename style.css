@@ -128,25 +128,23 @@ header{
   
 .footer{
   flex-direction: row;
-  display: flex;
+  display: column;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
 
 }
 footer a, footer p{
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 1px;
 }
+
 footer span{
   color: crimson;
 }
-
-
-
-  #git_hub{
+#git_hub{
     color: #eee;
   }
 
@@ -266,6 +264,10 @@ footer span{
   .card h2{
     font-size: 1.2rem;
   }
+}
+.footer a, .footer p{
+  font-size: 1rem;
+  
 }
 
 /*End of Media Queries*/
