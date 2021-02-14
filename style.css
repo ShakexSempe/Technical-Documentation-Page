@@ -70,7 +70,7 @@ header{
     position: fixed;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg,  rgb(2, 56, 2), rgb(66, 2, 66), #dc143c80);
+    background: linear-gradient(45deg,  rgb(2, 56, 2), rgb(66, 2, 66), #dc143c);
     background-size: 170%;
     /* background: url('https://resources.premierleague.com/premierleague/photo/2020/08/11/55650e57-1935-4a40-b3be-f8d1900598e8/FPL-Statement-Lead.png');
     background-color: purple; */
