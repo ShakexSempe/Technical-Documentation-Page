@@ -16,7 +16,6 @@
   }
   #main-doc {
     position: absolute;
-    
     left: 35%;
     padding: 10px;
     margin-bottom: 20px;
@@ -26,15 +25,25 @@
   .header {
     padding: 30px;
     text-align: center;
-    background: url('https://wallpaperaccess.com/full/1401210.jpg');
-    background-size: cover;
+    background: linear-gradient(45deg,  rgb(2, 56, 2), rgb(66, 2, 66), #dc143c80);
+    background-size: 200%;
     color: #fff;
     position: relative;
     width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
     left: 2;
+    animation: headmation 6s ease infinite alternate;
   }
+  @keyframes headmation{
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+}
+
   .header h1 {
     font-size: 3.5rem;
     font-weight: 1000;
@@ -61,16 +70,27 @@ header{
     position: fixed;
     display: flex;
     flex-direction: column;
-    
-    background: url('https://resources.premierleague.com/premierleague/photo/2020/08/11/55650e57-1935-4a40-b3be-f8d1900598e8/FPL-Statement-Lead.png');
-    background-color: purple;
+    background: linear-gradient(45deg,  rgb(2, 56, 2), rgb(66, 2, 66), #dc143c80);
+    background-size: 170%;
+    /* background: url('https://resources.premierleague.com/premierleague/photo/2020/08/11/55650e57-1935-4a40-b3be-f8d1900598e8/FPL-Statement-Lead.png');
+    background-color: purple; */
     height: 100vh;
     top: 0px;
     left: 0px;
     padding: 0;
     width: 35%;
-    overflow-y: scroll;
+    overflow: auto;
+    animation: navimation 8s ease-in-out infinite alternate;
   }
+  @keyframes navimation{
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+}
+
   #navbar header{
     color: #fff;
     font-weight: 800;
