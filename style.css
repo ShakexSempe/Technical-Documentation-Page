@@ -25,7 +25,7 @@
   .header {
     padding: 30px;
     text-align: center;
-    background: linear-gradient(45deg,  rgb(2, 56, 2), rgb(66, 2, 66), #dc143c80);
+    background: linear-gradient(45deg,  #dc143c80, rgb(66, 2, 66), rgb(2, 56, 2));
     background-size: 200%;
     color: #fff;
     position: relative;
