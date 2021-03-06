@@ -29,8 +29,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(70deg,  #dc143c80, rgb(66, 2, 66), rgb(2, 56, 2));
-    background-size: 300%;
+    background: linear-gradient(90deg,  #dc143c80, rgb(66, 2, 66), rgb(2, 56, 2));
+    background-size: 400%;
     color: #fff;
     position: relative;
     width: 100%;
@@ -222,15 +222,17 @@ footer span{
         width: 100%;
         max-height: 35vh;
         border: none;
-        z-index: 1000;
+        z-index: 10;
         overflow: scroll;
       }
     #navbar header {
       position: fixed;
       z-index: 20;
-      background: linear-gradient(0deg, #4e0413, rgb(153, 3, 3), #4e0413);
+      background: linear-gradient(90deg,  #b30e2f, rgb(66, 2, 66), rgb(2, 56, 2));
+      background-size: 130%;
       width: 100%;
       height: auto;
+      z-index: 20;
     }
     .nav-links{
       padding-top: 12vh;
@@ -255,7 +257,7 @@ footer span{
       }
       .header h1 {
         font-size: 3.3rem;
-        font-weight: 1000;
+        font-weight: 900;
       }
     .introP{
       font-size: 1.3rem;
@@ -263,6 +265,7 @@ footer span{
     }
     .card{
       background: linear-gradient(0deg, #fff 85%, #72061c, rgb(75, 1, 75));
+      
     }
     .card header{
       margin: 30px 0;
@@ -307,23 +310,25 @@ footer span{
     width: 100vw;
     left: 0;
   }
-  #navbar{
-    position: fixed;
-    min-height: 25vh;
-    
+  .main-section header{
+    font-size: 2rem;
+    padding-top: 220px;
   }
   #navbar {
-    max-height: 25vh;
+    position: fixed;
+    max-height: 29vh;
     border: none;
     z-index: 1000;
     overflow: scroll;
-  /* }
+  }
+    /* 
 #navbar header {
   z-index: 20;
   background: #000;
   width: 100%;
   height: auto;
 } */
+
 .nav-links{
   padding-top: 13vh;
 
@@ -336,7 +341,7 @@ footer span{
     font-size: 1.1rem;
   }
   .header{
-    height:70vh;
+    height:65vh;
     border-radius: 0;
   }
   .header h1{
@@ -348,8 +353,8 @@ footer span{
   .card {
     background-color: #f4f4f4;
     padding: 10px;
-    margin: 9px;
-    border: 4px solid;
+    margin: 0px auto;
+    border: 0px solid;
     border-radius: 10px;
     width: 100%;
     line-height: 2;
