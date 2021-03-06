@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Kalam:wght@400;700&family=Gruppo&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -45,24 +45,22 @@
 }
 
   .header h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
     font-weight: 1000;
+    font-family: 'Gruppo', cursive;
+    margin-bottom: 15px;
   }
 .introP{
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Kalam', cursive;
+  color: #ddd;
 }
 #scoring h2{
   text-decoration: dotted underline;
 }
 
-header{
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: underline;
-    font-size: 2rem;
-    font-weight: 800;
-}
+
   
   
   /* Style the navigation bar */
@@ -70,7 +68,7 @@ header{
     position: fixed;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg,  rgb(2, 56, 2), rgb(66, 2, 66), #dc143c);
+    background: #72061c;
     background-size: 170%;
     /* background: url('https://resources.premierleague.com/premierleague/photo/2020/08/11/55650e57-1935-4a40-b3be-f8d1900598e8/FPL-Statement-Lead.png');
     background-color: purple; */
@@ -80,7 +78,6 @@ header{
     padding: 0;
     width: 35%;
     overflow: auto;
-    animation: navimation 8s ease-in-out infinite alternate;
   }
   @keyframes navimation{
     0%{
@@ -90,15 +87,35 @@ header{
       background-position: right;
     }
 }
+.card header{
+  font-weight: 900;
+  margin: 20px 0 60px 0;
+  font-size: 2em;
+  text-decoration: underline;
+  text-align: center;
 
+}
+.card h5 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.card p{
+  line-height: 1.8;
+  font-size: 1.2em;
+  font-weight: 100;
+}
   #navbar header{
     color: #fff;
-    font-weight: 800;
-    font-size: 1.4rem;
-    text-decoration: underline;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Gruppo', cursive;
+
     
   }
   
@@ -114,17 +131,22 @@ header{
     min-width: 100%;
     border: 1px solid #333;
     padding: 30px;
+    font-family: 'Gruppo', cursive;
+    font-weight: 600;
+    font-size: 1.2em;
+
+    
   }
   
   
   /* Change color on hover */
   #navbar a:hover {
-    background-color: rgb(236, 9, 179);
-    color: #fff;
-    font-weight: 500;
+    background-color: rgba(236, 9, 179, 0.384);
+    color: #ddd;
+    font-weight: 600;
     width: 98% ;
     border-radius: 5%;
-    transition: .4s ease-in-out;
+    transition: .2s ease-in-out;
     ;
   }
   
@@ -146,6 +168,8 @@ header{
     padding: 15px;
   }
   
+
+
 .footer{
   flex-direction: row;
   display: column;
@@ -220,6 +244,33 @@ footer span{
       font-size: 1.3rem;
       font-weight: 600;
     }
+    .card{
+      background: linear-gradient(0deg, #fff 85%, #72061c, rgb(75, 1, 75));
+    }
+    .card header{
+      margin: 0px 0 30px 0;
+      font-size: 3em;
+      text-decoration: none;
+      text-align: center;
+    
+    }
+    .card h5 {
+      font-size: 0.9em;
+      margin-bottom: 0.2em;
+    }
+    .card p{
+      line-height: 2;
+      font-size: 0.9em;
+      font-weight: 100;
+    }
+    .card li{
+      font-size: 0.8rem;
+    }
+    
+  .main-section header{
+    font-size: 2rem;
+    padding-top: 200px;
+  }
 }
 
 
@@ -243,11 +294,11 @@ footer span{
     
   }
   #navbar header{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
   #navbar .nav-link{
     line-height: 1;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   .header{
     height: 43vh;
@@ -256,21 +307,8 @@ footer span{
   .header h1{
     font-size: 4rem;
   }
-  .introP{
-    font-size: 1rem;
-  }
-  .main-section header{
-    font-size: 1.6rem;
-    padding-top: 200px;
-  }
-  .main-section h5, p{
-    font-size: 0.7rem;
-    line-height: 2;
-  }
   
-  .card li{
-    font-size: 0.7rem;
-  }
+  
 
   .card {
     background-color: #f4f4f4;
