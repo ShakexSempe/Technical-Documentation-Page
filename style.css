@@ -182,18 +182,16 @@
 
 
 .footer{
-  flex-direction: row;
-  display: column;
+  display: flex;
   justify-content: center;
   text-align: center;
-  padding: 0px;
 
 }
 footer a, footer p{
-  font-size: 2rem;
+  font-size: 3em;
   color: #fff;
   text-decoration: none;
-  margin: 0 1px;
+  margin: 5px;
 }
 
 footer span{
@@ -230,7 +228,7 @@ footer span{
     #navbar header {
       position: fixed;
       z-index: 20;
-      background: #000;
+      background: linear-gradient(0deg, #4e0413, rgb(153, 3, 3), #4e0413);
       width: 100%;
       height: auto;
     }
@@ -319,13 +317,13 @@ footer span{
     border: none;
     z-index: 1000;
     overflow: scroll;
-  }
+  /* }
 #navbar header {
   z-index: 20;
   background: #000;
   width: 100%;
   height: auto;
-}
+} */
 .nav-links{
   padding-top: 13vh;
 
