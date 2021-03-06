@@ -111,23 +111,25 @@
   font-size: 1.2em;
   font-weight: 100;
 }
-  #navbar header{
+  #navbar header a{
+    margin-top: 5px;
     color: #fff;
     font-weight: 900;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px 20px;
     font-family: 'Gruppo', cursive;
-
-    
+}
+  #navbar header a:hover{
+    background: transparent;
+    border: 1px solid #fff;
   }
-  
   /* Style the navbar links */
-  #navbar a{
+  .nav-links a{
     top: 1vh;
     position: relative;
     float: left;
@@ -149,7 +151,7 @@
   
   
   /* Change color on hover */
-  #navbar a:hover {
+  .nav-links a:hover {
     background-color: rgba(236, 9, 179, 0.384);
     color: #ddd;
     font-weight: 700;
@@ -217,19 +219,27 @@ footer span{
 
   @media screen and (max-width: 766px) {
     #navbar {
-        position: fixed;
+        position: relative;
         padding: 0;
         width: 100%;
-        max-height: 25vh;
+        max-height: 35vh;
         border: none;
         z-index: 1000;
         overflow: scroll;
-
+      }
+    #navbar header {
+      position: fixed;
+      z-index: 20;
+      background: #000;
+      width: 100%;
+      height: auto;
+    }
+    .nav-links{
+      padding-top: 12vh;
     }
     #navbar a{
         border: 1px solid rgb(3, 80, 3);
         padding: 15px;
-        margin-top: 0vh;
       }
 
       
@@ -304,19 +314,35 @@ footer span{
     min-height: 25vh;
     
   }
-  #navbar header{
-    font-size: 1.7rem;
+  #navbar {
+    max-height: 25vh;
+    border: none;
+    z-index: 1000;
+    overflow: scroll;
+  }
+#navbar header {
+  z-index: 20;
+  background: #000;
+  width: 100%;
+  height: auto;
+}
+.nav-links{
+  padding-top: 13vh;
+
+}
+  #navbar header a{
+    font-size: 2rem;
   }
   #navbar .nav-link{
     line-height: 1;
     font-size: 1.1rem;
   }
   .header{
-    height:80vh;
+    height:70vh;
     border-radius: 0;
   }
   .header h1{
-    font-size: 5rem;
+    font-size: 4rem;
   }
   
   
