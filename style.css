@@ -222,7 +222,7 @@ footer span{
     #navbar header {
       position: fixed;
       z-index: 20;
-      background: linear-gradient(90deg,  #dc143c80, rgb(66, 2, 66), rgb(2, 56, 2));
+      background: linear-gradient(90deg,  #dc143c, rgb(66, 2, 66), rgb(2, 56, 2));
     background-size: 200%;
     animation: headmation 10s linear infinite alternate;
       width: 100%;
