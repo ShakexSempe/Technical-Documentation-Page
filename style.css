@@ -42,10 +42,10 @@
   }
   @keyframes headmation{
     0%{
-      background-position: left;
+      background-position: 10%;
     }
     100%{
-      background-position: right;
+      background-position: 80%;
     }
 }
 
@@ -62,9 +62,6 @@
   font-family: 'Pangolin', cursive;
   text-shadow:  0px 0px 10px rgb(47, 161, 127);
   color: #ddd;
-}
-#scoring h2{
-  text-decoration: dotted underline;
 }
 
 
@@ -86,14 +83,7 @@
     width: 35%;
     overflow: auto;
   }
-  @keyframes navimation{
-    0%{
-      background-position: left;
-    }
-    100%{
-      background-position: right;
-    }
-}
+
 .card header{
   font-weight: 900;
   margin: 20px 0 60px 0;
@@ -117,6 +107,9 @@
     font-weight: 900;
     text-decoration: none;
     font-size: 2.5rem;
+    text-shadow:  0px 0px 15px rgb(47, 161, 75),
+                  0px 0px 10px rgb(47, 161, 75);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +120,7 @@
   #navbar header a:hover{
     background: transparent;
     border: 1px solid #fff;
+    text-shadow: none;
   }
   /* Style the navbar links */
   .nav-links a{
@@ -228,8 +222,9 @@ footer span{
     #navbar header {
       position: fixed;
       z-index: 20;
-      background: linear-gradient(90deg,  #b30e2f, rgb(66, 2, 66), rgb(2, 56, 2));
-      background-size: 130%;
+      background: linear-gradient(90deg,  #dc143c80, rgb(66, 2, 66), rgb(2, 56, 2));
+    background-size: 200%;
+    animation: headmation 10s linear infinite alternate;
       width: 100%;
       height: auto;
       z-index: 20;
@@ -320,6 +315,7 @@ footer span{
     border: none;
     z-index: 1000;
     overflow: scroll;
+    
   }
     /* 
 #navbar header {
