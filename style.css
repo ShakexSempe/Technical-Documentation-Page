@@ -274,7 +274,8 @@ footer span{
       margin: .5em 0;
       font-size: 3em;
       font-weight: 900;
-      text-decoration: underline;
+      text-decoration: underline 1px #000a;
+      text-underline-offset: .2em;
       text-align: center;
     
     }
