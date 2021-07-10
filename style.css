@@ -201,17 +201,10 @@ footer span{
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 /*Media Queries*/
-  @media screen and (max-width:1024px){
-    .nav-links{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
 
   @media screen and (max-width: 766px) {
     #navbar {
-        position: relative;
+        position: fixed;
         padding: 0;
         width: 100%;
         max-height: 35vh;
@@ -230,13 +223,21 @@ footer span{
       z-index: 20;
     }
     .nav-links{
-      padding-top: 12vh;
+      display: flex;
+      /* padding-top: 12vh; */
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      top: 4.5em;
     }
     #navbar a{
         border: 1px solid rgb(3, 80, 3);
         padding: 15px;
       }
 
+    #header {
+      padding-top: 30vh;
+    }
       
       #main-doc {
         display: flex;
@@ -244,7 +245,7 @@ footer span{
         align-items: center;
         justify-content: space-evenly;
         position: absolute;
-        top: 25vh;
+        /* top: 25vh; */
         margin: 30px auto;
         padding: 2px;
         width: 100vw;
@@ -258,12 +259,16 @@ footer span{
       font-size: 1.3rem;
       font-weight: 600;
     }
-    .card{
-      background: linear-gradient(0deg, #fff 85%, #72061c, rgb(75, 1, 75));
-      
+    .card {
+      width: 90%;
+      margin: 1em auto;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    line-height: 2;
     }
     .card header{
-      margin: 30px 0;
+      margin: .5em 0;
       font-size: 3em;
       font-weight: 900;
       text-decoration: underline;
@@ -286,35 +291,16 @@ footer span{
     
   .main-section header{
     font-size: 2rem;
-    padding-top: 200px;
   }
 }
 
 
 
 @media screen and (max-width: 420px){
-  #main-doc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 25vh;
-    margin: 30px auto;
-    padding: 0px;
-    width: 100vw;
-    left: 0;
-  }
-  .main-section header{
-    font-size: 2rem;
-    padding-top: 220px;
-  }
+  
   #navbar {
     position: fixed;
     max-height: 29vh;
-    border: none;
-    z-index: 1000;
-    overflow: scroll;
     
   }
     /* 
@@ -324,11 +310,6 @@ footer span{
   width: 100%;
   height: auto;
 } */
-
-.nav-links{
-  padding-top: 13vh;
-
-}
   #navbar header a{
     font-size: 2rem;
   }
@@ -344,17 +325,7 @@ footer span{
     font-size: 4rem;
   }
   
-  
 
-  .card {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin: 0px auto;
-    border: 0px solid;
-    border-radius: 10px;
-    width: 100%;
-    line-height: 2;
-  }
   .card h2{
     font-size: 1.2rem;
   }
