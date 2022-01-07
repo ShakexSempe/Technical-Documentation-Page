@@ -5,39 +5,37 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+    /* border: 1px solid red; */
   }
   
   body {
-    padding: 10px;
+    width: 100%;
+    padding: 5px;
     background: #f1f1f1;
     background-color: #3d043d;
-    
+    position: relative;
+
     
   }
   #main-doc {
+    border: 1px solid yellow;
     position: absolute;
-    left: 35%;
-    padding: 10px;
+    left: 20%;
     margin-bottom: 20px;
     width: auto;
   }
   /* Header/Blog Title */
-  .header {
-    padding: 30px;
+  #header {
+    /* padding: 30px; */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background: linear-gradient(90deg,  #dc143c80, rgb(66, 2, 66), rgb(2, 56, 2));
     background-size: 400%;
     color: #fff;
     position: relative;
     width: 100%;
-    height: 100vh;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    left: 2;
+    height: 50vh;
+    border: 1px solid green;
     animation: headmation 10s ease infinite alternate;
   }
   @keyframes headmation{
@@ -49,15 +47,15 @@
     }
 }
 
-  .header h1 {
-    font-size: 6rem;
+  #header h1 {
+    font-size: 4rem;
     font-weight: 1000;
     font-family: 'Gruppo', cursive;
-    margin-bottom: 15px;
+    margin: 10vh auto 5vh;
     text-shadow:  0px 0px 15px rgb(161, 47, 161);
   }
-.introP{
-  font-size: 2.5rem;
+main .introP{
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Pangolin', cursive;
   text-shadow:  0px 0px 10px rgb(47, 161, 127);
@@ -80,14 +78,14 @@
     top: 0px;
     left: 0px;
     padding: 0;
-    width: 35%;
+    width: 20%;
     overflow: auto;
   }
 
-.card header{
+.card section header{
+  font-size: 2.5em;
   font-weight: 900;
   margin: 20px 0 60px 0;
-  font-size: 3em;
   text-align: center;
   font-family: 'Gruppo', cursive;
 
@@ -101,12 +99,12 @@
   font-size: 1.2em;
   font-weight: 100;
 }
-  #navbar header a{
-    margin-top: 5px;
-    color: #fff;
+  #navbar h1 a{
+    margin: 10vh auto 1em;
+    color: hsl(56, 100%, 50%);
     font-weight: 900;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow:  0px 0px 15px rgb(47, 161, 75),
                   0px 0px 10px rgb(47, 161, 75);
     border: none;
@@ -115,7 +113,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     font-family: 'Gruppo', cursive;
     transition: .2s ease;
 }
@@ -127,6 +125,7 @@
   .nav-links {
     display: flex;
     flex-direction: column;
+    text-align: right;
     /* background-color: green; */
     height: 70%;
     justify-content: space-evenly;
@@ -135,7 +134,6 @@
     /* position: relative;
     float: left; */
     color: #fff;
-    text-align: center;
     padding: 10px 16px;
     text-decoration: none;
     min-width: 100%;
@@ -164,12 +162,10 @@
   .card {
     background-color: #f2f2f2;
     padding: 1em;
-    border: none;
+    border: 2px solid #000;
     outline: none;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: inset 3px 3px 5px rgb(165, 165, 165),
-                inset -3px -3px 5px #000a;
+    border-radius: 5px;
+    margin: 1em .5em;
   }
   .card ul{
     margin: 5px;
@@ -208,38 +204,50 @@ footer span{
   @media screen and (max-width: 766px) {
     #navbar {
         position: fixed;
-        padding: 0;
+        top: 0;
         width: 100%;
-        max-height: 35vh;
-        border: none;
+        /* height: 70vh; */
+        height: 0vh;
+        border: 3px solid blue;
         z-index: 10;
-        overflow: scroll;
+        overflow: auto;
+        transition: 1s ease;
       }
-    #navbar header {
+      #navbar.active {
+        height: 70vh;
+      }
+    #navbar h1 {
       position: fixed;
-      z-index: 20;
-      background: linear-gradient(90deg,  #dc143c, rgb(66, 2, 66), rgb(2, 56, 2));
+      top: 0;
+      left: 0;
+      /* background: linear-gradient(90deg,  #dc143c, rgb(66, 2, 66), rgb(2, 56, 2));
     background-size: 200%;
-    animation: headmation 10s linear infinite alternate;
+    animation: headmation 10s linear infinite alternate; */
+    background-color: green;
       width: 100%;
-      height: auto;
-      z-index: 20;
+      height: 10vh;
+      z-index: 11;
+      margin: 0;
+      padding: .5em;
+      border: 1px solid yellow;
+    }
+    #navbar h1 a {
+      margin: 0;
     }
     .nav-links{
       display: flex;
+      text-align: center;
       /* padding-top: 12vh; */
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      top: 4.5em;
+      top: 15vh;
     }
-    #navbar a{
-        border: 1px solid purple;
-        padding: 15px;
-      }
+    
 
     #header {
-      padding-top: 30vh;
+      /* padding-top: 30vh; */
+      height: 100vh;
     }
       
       #main-doc {
@@ -270,9 +278,9 @@ footer span{
     border-radius: 10px;
     line-height: 2;
     }
-    .card header{
+    .card section header{
       margin: .5em auto;
-      font-size: 3em;
+      font-size: 2em;
       font-weight: 900;
       text-decoration: underline 1px #000a;
       text-underline-offset: .2em;
@@ -300,20 +308,13 @@ footer span{
 
 
 
-@media screen and (max-width: 420px){
+/* @media screen and (max-width: 420px){
   
   #navbar {
     position: fixed;
     max-height: 29vh;
     
   }
-    /* 
-#navbar header {
-  z-index: 20;
-  background: #000;
-  width: 100%;
-  height: auto;
-} */
   #navbar header a{
     font-size: 2rem;
   }
@@ -333,7 +334,7 @@ footer span{
   .card h2{
     font-size: 1.2rem;
   }
-}
+} */
 .footer a, .footer p{
   font-size: 1rem;
   
