@@ -210,6 +210,7 @@ footer span{
         z-index: 10;
         overflow: auto;
         transition: 1s ease;
+        padding: .5em;
       }
       #navbar.active {
         height: 90vh;
