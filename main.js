@@ -1,7 +1,8 @@
 const scrollLinks = document.querySelectorAll('.nav-link');
 const nav = document.getElementById('navbar');
+const hamburger = document.getElementById('hamburger');
 const header = document.getElementById('header');
-console.log(header);
+console.log(hamburger);
 
 // scrollLinks.forEach(link => {
 //     link.addEventListener('click', (e) => {
@@ -34,6 +35,6 @@ console.log(header);
 // });
 
 const navbar = document.getElementById("navbar");
-navbar.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
 })
