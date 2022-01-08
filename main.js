@@ -38,4 +38,8 @@ const navbar = document.getElementById("navbar");
 hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
     hamburger.classList.toggle("active");
-})
+});
+
+// date 
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
