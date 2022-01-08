@@ -235,6 +235,9 @@ footer span{
       #navbar.active {
         height: 90vh;
       }
+      #navbar.active#navbar h1 {
+        background-color: hsl(300, 95%, 10%);
+      }
     #navbar h1 {
       position: fixed;
       top: 0;
