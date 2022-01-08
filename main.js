@@ -1,8 +1,9 @@
 const scrollLinks = document.querySelectorAll('.nav-link');
 const nav = document.getElementById('navbar');
+const navLink = document.querySelectorAll(".nav-link")
 const hamburger = document.getElementById('hamburger');
 const header = document.getElementById('header');
-console.log(hamburger);
+console.log(navLink);
 
 // scrollLinks.forEach(link => {
 //     link.addEventListener('click', (e) => {
@@ -38,6 +39,14 @@ const navbar = document.getElementById("navbar");
 hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
     hamburger.classList.toggle("active");
+});
+
+// remove menu when nav link is clicked
+navLink.forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    })
 });
 
 // date 
