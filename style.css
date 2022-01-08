@@ -262,11 +262,28 @@ footer span{
         height: 2em;
         width: 2em;
         border: 1px solid #fff;
-        background-color: #fff;
+        background-color: pink;
         position: fixed;
         border-radius: 50%;
+        border: none;
         transform: translateY(-50%);
         z-index: 5;
+        transition: .3s ease;
+        box-shadow: inset 1px 1px 2px #fffa,
+                    inset -1px -1px 2px #000a;
+      }
+      #hamburger .bar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 2px;
+        background-color: #000;
+      }
+      #hamburger.active {
+        background-color: rgb(248, 142, 160);
+        transform: translateY(-50%) scale(.85);
       }
       /* end of hamburger toggle */
 
