@@ -199,7 +199,7 @@ main .introP{
   
 
 
-.footer{
+footer{
   display: flex;
   justify-content: center;
   text-align: center;
@@ -422,13 +422,13 @@ footer span{
     font-size: 1.2rem;
   }
 } */
-footer {
+#footer {
   padding: 5vh 0;
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
 }
-.footer a, .footer p{
+footer a, footer p{
   font-size: 1rem;
 }
 footer #date{
