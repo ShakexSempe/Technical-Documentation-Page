@@ -228,7 +228,7 @@ footer span{
 
   @media screen and (max-width: 768px) {
     * {
-      scroll-padding-top: 10vh;
+      scroll-padding-top: 15vh;
     }
     #navbar {
         position: fixed;
@@ -264,6 +264,7 @@ footer span{
         /* move h1 to the left with padding-right */
         padding-right: 60%;
         border: 1px solid #0000;
+        transition: .5s;
       }
       /* hamburger toggle */
       #hamburger {
@@ -348,7 +349,7 @@ footer span{
         position: absolute;
         /* top: 25vh; */
         margin: 30px auto;
-        padding: 0 .5em;
+        padding: 0;
         width: 100vw;
         left: 0;
       }
@@ -362,15 +363,15 @@ footer span{
     }
     .card {
       width: 100%;
-      min-height: auto;
-      margin: 1em auto;
+      /* min-height: auto; */
+      margin: .1em auto;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 0;
     line-height: 2;
     }
     .card h2{
-      margin: 0 auto 1em;
+      margin: 1em auto;
     
     }
     .card h3 {
