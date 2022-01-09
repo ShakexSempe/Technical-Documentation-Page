@@ -4,6 +4,10 @@
   --background-light: #f4f4f4;
   --background-dark: #3d043d;
   --nav-bg: #4e0413;
+  --nav-h1: #530253;
+
+  --toggle-bg: #f4f4f4;
+  --toggle-hover: pink;
 
   --font-gruppo: 'Gruppo', cursive;
   --font-sans-serif: 'Varela Round', sans-serif;
@@ -104,8 +108,11 @@ main .introP{
     text-align: center;
     /* padding: 20px 20px; */
     font-family: 'Gruppo', cursive;
-    transition: .2s ease;
-
+    transition: .2s ease
+}
+#navbar h1 a {
+  color: #f4f4f4;
+  text-decoration: none;
 }
   #navbar header a:active{
     transform: scale(.95);
@@ -247,7 +254,8 @@ footer span{
         left: 0;
         /* background: linear-gradient(00deg, rgb(66, 2, 66),  #000); */
         /* background-size: 200%; */
-        background-color: rgb(83, 2, 83);
+        /* background-color: #530253; */
+        background-color: var(--nav-h1);
         width: 100%;
         height: 10vh;
         z-index: 1;
@@ -265,7 +273,7 @@ footer span{
         height: 2em;
         width: 2em;
         border: 1px solid #fff;
-        background-color: pink;
+        background-color: var(--toggle-bg);
         position: fixed;
         border-radius: 50%;
         border: none;
@@ -276,18 +284,39 @@ footer span{
         box-shadow: inset 1px 1px 2px #fffa,
                     inset -1px -1px 2px #000a;
       }
+      /* hamburger bars */
       #hamburger .bar {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 70%;
+        width: 60%;
         height: 2px;
         background-color: #000;
       }
+      .bar::before, 
+      .bar::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+        transition: .3s ease;
+      }
+      .bar::before {
+        top: -5px;
+      }
+      .bar:after {
+        top: 5px;
+      }
+      /* end of hamburger bars */
+
       #hamburger.active {
-        background-color: rgb(248, 142, 160);
+        background-color: var(--toggle-hover);
         transform: translateY(-50%) scale(.85);
+      }
+      #hamburger.active .bar::before, #hamburger.active .bar::after {
+        top: 0;
       }
       /* end of hamburger toggle */
 
