@@ -52,3 +52,47 @@ navLink.forEach(link => {
 // date 
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+const titles = document.querySelectorAll('.card h2');
+console.log(titles);
+const titlesOptions = {
+    rootMargin: "0px 0px 0px 0px",
+};
+
+titles.forEach(title => {
+    const titleObserver = new IntersectionObserver(
+        function(entries, titleObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log("title NOT io");
+                    title.classList.remove('active');
+                } else {
+                    title.classList.add('active');
+                    console.log("title IS IO");
+                }
+            })
+        } , titlesOptions
+    );
+    titleObserver.observe(title);
+});
+
+const observerItems = document.querySelectorAll('.io-item');
+const itemOptions = {
+    rootMargin: "0px 0px 0px 0px",
+}
+observerItems.forEach(item => {
+    const itemsObserver = new IntersectionObserver(
+        function(entries, itemsObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    // console.log('item NOT intersecting');
+                    item.classList.remove('active-item');
+                } else {
+                    // console.log("item IS intersecting");
+                    item.classList.add('active-item');
+                }
+            })
+        }, itemOptions
+    );
+    itemsObserver.observe(item);
+});
