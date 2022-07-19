@@ -11,6 +11,13 @@
     <meta name="theme-color" content="#530253" />
   </head>
   <body>
+    <!-- PRELOADER -->
+    <div class="loader_bg">
+      <div class="spinner-main">
+        <div class="spinner spinner-1"></div>
+        <div class="spinner spinner-2"></div>
+      </div>
+    </div>
     <!--Navbar header-->
     <nav id="navbar">
       <h1><a title="fantasy football" href="#">Fantasy Football</a></h1>
@@ -223,5 +230,12 @@
     </main>
 
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- PRELOADER SCRIPT -->
+  <script>
+    setTimeout(function () {
+      $('.loader_bg').fadeToggle();
+    }, 8000);
+  </script>
   </body>
 </html>
