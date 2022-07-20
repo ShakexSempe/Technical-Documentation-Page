@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
 
 :root {
   --background-light: #f4f4f4;
@@ -12,7 +12,7 @@
   --font-title: 'Crete Round', serif;
   --font-content: 'Gruppo', cursive;
   --font-gruppo: 'Gruppo', cursive;
-  --font-content: 'Varela Round', sans-serif;
+  --font-content: 'Noto Sans', sans-serif;
 }
 
 * {
@@ -72,7 +72,7 @@
     text-shadow:  0px 0px 15px rgb(161, 47, 161);
   }
 main .introP{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   text-shadow:  0px 0px 10px rgb(47, 161, 127);
   color: #fff;
@@ -100,7 +100,7 @@ main .introP{
     color: #f4f4f4;
     font-weight: 400;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow:  0px 0px 15px rgb(47, 161, 75),
                   0px 0px 10px rgb(47, 161, 75);
     border: none;
@@ -164,12 +164,12 @@ main .introP{
   text-align: center;
 }
 .card h2 {
-  font-size: 1.5em;
+  font-size: 1.8rem;
   /* text-decoration: underline rgba(0, 0, 0, 0.212); */
-  font-weight: 900;
+  font-weight: 500;
   margin: 1em auto 2em;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: .2rem;
   transform: translateY(-2rem);
   opacity: 0;
@@ -182,24 +182,20 @@ main .introP{
 }
 
 .card h3 {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  /* opacity: .5; */
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
-
-
 
 .card p{
   margin: 1em 0;
-  line-height: 1.8;
-  font-size: 1.2em;
-  font-weight: 100;
-  /* opacity: .5;
-  transform: translateY(2rem); */
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .card i {
-  color: purple;
+  /* color: purple; */
 }
 .card a:hover {
   color: purple;
@@ -399,11 +395,6 @@ footer span{
       font-size: 0.9em;
       margin-bottom: 0.2em;
       font-weight: 600;
-    }
-    .card p{
-      line-height: 2;
-      font-size: 1em;
-      font-weight: 100;
     }
     .card li{
       font-size: 1em;
