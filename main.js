@@ -5,36 +5,6 @@ const hamburger = document.getElementById('hamburger');
 const header = document.getElementById('header');
 console.log(navLink);
 
-// scrollLinks.forEach(link => {
-//     link.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         const id = e.currentTarget.getAttribute('href').slice(1);
-//         const element = document.getElementById(id);
-//         const navHeight = nav.getBoundingClientRect().height;
-//         const headerHeight = header.getBoundingClientRect().height;
-
-
-//         let position = element.offsetTop - navHeight;
-
-//         console.log(navHeight);
-
-//         if(navHeight < 500) {
-//             position = position 
-//         }else {
-//             position = position + headerHeight
-//         }
-
-//         window.scrollTo({
-//             left: 0,
-//             top: position,
-//         });
-//         // linksContainer.style.height = 0;
-
-        
-//         console.log(position);
-//     })
-// });
-
 const navbar = document.getElementById("navbar");
 hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
@@ -53,28 +23,6 @@ navLink.forEach(link => {
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 
-const titles = document.querySelectorAll('.card h2');
-console.log(titles);
-const titlesOptions = {
-    rootMargin: "0px 0px 0px 0px",
-};
-
-titles.forEach(title => {
-    const titleObserver = new IntersectionObserver(
-        function(entries, titleObserver){
-            entries.forEach(entry => {
-                if(!entry.isIntersecting){
-                    console.log("title NOT io");
-                    title.classList.remove('active');
-                } else {
-                    title.classList.add('active');
-                    console.log("title IS IO");
-                }
-            })
-        } , titlesOptions
-    );
-    titleObserver.observe(title);
-});
 
 const observerItems = document.querySelectorAll('.io-item');
 const itemOptions = {
